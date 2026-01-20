@@ -13,7 +13,7 @@ The biocViews ontology is a controlled vocabulary for categorizing Bioconductor 
 
 ## Files
 
-- **biocViewsVocab.obo** - The ontology in OBO format (500 terms, 500 relationships)
+- **biocViewsVocab.obo** - The ontology in OBO format (500 terms, 499 relationships)
 - **convert_dot_to_obo.py** - Python script to convert DOT format to OBO format
 - **validate_obo.py** - Python validation script for OBO file
 - **test_ontology.R** - R validation script for OBO file (requires R installation)
@@ -77,7 +77,7 @@ BiocViews (root)
 - Root terms: 1 (BiocViews)
 - Leaf terms: 464
 - Maximum depth: 4 levels
-- Total relationships: 500
+- Total relationships: 499 (500 in source DOT file, 1 duplicate removed)
 
 ## Using the OBO File
 
@@ -165,6 +165,8 @@ The OBO file was generated from `inst/dot/biocViewsVocab.dot` using the conversi
 - **Nodes** → **Terms**: Each node in the DOT graph becomes an OBO term
 - **Edges** → **is_a relationships**: Each edge `A -> B` becomes `B is_a A` (B is a subclass of A)
 - **Hierarchy**: The parent-child relationships are maintained exactly
+
+**Note**: The source DOT file contained one duplicate edge (`CancerData -> LeukemiaCancerData` appeared twice on lines 495 and 499). The conversion script automatically removes duplicate edges, resulting in 499 unique relationships from 500 edges in the original file.
 
 To regenerate the OBO file from the DOT file:
 
