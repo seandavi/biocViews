@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: 1.0
-date: 20:01:2026 20:48
+date: 20:01:2026 20:55
 ontology: biocViews
 default-namespace: biocViews
 
@@ -2214,7 +2214,6 @@ is_a: BIOCVIEWS:0000230 ! CancerData
 [Term]
 id: BIOCVIEWS:0000432
 name: LeukemiaCancerData
-is_a: BIOCVIEWS:0000230 ! CancerData
 is_a: BIOCVIEWS:0000230 ! CancerData
 
 [Term]

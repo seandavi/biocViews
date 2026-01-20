@@ -123,8 +123,11 @@ def check_cycles(terms):
     has_cycle = False
     cycle_path = []
     
-    def dfs(node, path=[]):
+    def dfs(node, path=None):
         nonlocal has_cycle, cycle_path
+        
+        if path is None:
+            path = []
         
         if has_cycle:
             return

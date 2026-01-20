@@ -11,6 +11,7 @@ def parse_dot_file(filename):
     """Parse DOT file and extract nodes and edges."""
     edges = []
     nodes = set()
+    edges_set = set()  # Track unique edges to avoid duplicates
     
     with open(filename, 'r') as f:
         for line in f:
@@ -26,7 +27,11 @@ def parse_dot_file(filename):
             edge_match = re.match(r'(\w+)\s*->\s*(\w+);?', line)
             if edge_match:
                 source, target = edge_match.groups()
-                edges.append((source, target))
+                edge = (source, target)
+                # Only add unique edges (removes duplicates from source DOT file)
+                if edge not in edges_set:
+                    edges.append(edge)
+                    edges_set.add(edge)
                 nodes.add(source)
                 nodes.add(target)
     
