@@ -1,0 +1,2563 @@
+format-version: 1.2
+data-version: 1.0
+date: 20:01:2026 20:48
+ontology: biocViews
+default-namespace: biocViews
+
+[Term]
+id: BIOCVIEWS:0000001
+name: BiocViews
+def: "Root term for the Bioconductor Views ontology, a controlled vocabulary for categorizing Bioconductor packages." []
+
+[Term]
+id: BIOCVIEWS:0000002
+name: AnnotationData
+def: "Annotation data packages containing curated biological metadata, reference information, and mapping data." []
+is_a: BIOCVIEWS:0000001 ! BiocViews
+
+[Term]
+id: BIOCVIEWS:0000003
+name: ExperimentData
+def: "Experimental data packages containing example datasets, published research data, and reproducible research materials." []
+is_a: BIOCVIEWS:0000001 ! BiocViews
+
+[Term]
+id: BIOCVIEWS:0000004
+name: Software
+def: "Bioconductor software packages providing tools for computational biology and bioinformatics analysis." []
+is_a: BIOCVIEWS:0000001 ! BiocViews
+
+[Term]
+id: BIOCVIEWS:0000005
+name: Workflow
+def: "Workflow packages demonstrating complete analysis pipelines and best practices for common bioinformatics tasks." []
+is_a: BIOCVIEWS:0000001 ! BiocViews
+
+[Term]
+id: BIOCVIEWS:0000006
+name: ChipManufacturer
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000007
+name: ChipName
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000008
+name: CustomArray
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000009
+name: CustomCDF
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000010
+name: CustomDBSchema
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000011
+name: FunctionalAnnotation
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000012
+name: Organism
+def: "Biological species for which annotation or data packages are available." []
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000013
+name: PackageType
+def: "Types of annotation data packages in Bioconductor." []
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000014
+name: SequenceAnnotation
+is_a: BIOCVIEWS:0000002 ! AnnotationData
+
+[Term]
+id: BIOCVIEWS:0000015
+name: AssayDomainData
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000016
+name: DiseaseModel
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000017
+name: OrganismData
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000018
+name: PackageTypeData
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000019
+name: RepositoryData
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000020
+name: ReproducibleResearch
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000021
+name: SpecimenSource
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000022
+name: TechnologyData
+is_a: BIOCVIEWS:0000003 ! ExperimentData
+
+[Term]
+id: BIOCVIEWS:0000023
+name: AssayDomain
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000024
+name: BiologicalQuestion
+def: "Specific biological questions or analyses addressed by bioinformatics methods." []
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000025
+name: Infrastructure
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000026
+name: ResearchField
+def: "Broad scientific research areas and disciplines." []
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000027
+name: ShinyApps
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000028
+name: StatisticalMethod
+def: "Statistical and computational methods used in bioinformatics analysis." []
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000029
+name: Technology
+def: "Laboratory and computational technologies used in biological research." []
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000030
+name: WorkflowManagement
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000031
+name: WorkflowStep
+def: "Common steps and procedures in bioinformatics analysis workflows." []
+is_a: BIOCVIEWS:0000004 ! Software
+
+[Term]
+id: BIOCVIEWS:0000032
+name: AnnotationWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000033
+name: BasicWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000034
+name: DifferentialSplicingWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000035
+name: EpigeneticsWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000036
+name: GeneExpressionWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000037
+name: GenomicVariantsWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000038
+name: ImmunoOncologyWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000039
+name: ProteomicsWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000040
+name: ResourceQueryingWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000041
+name: SingleCellWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000042
+name: SpatialWorkflow
+is_a: BIOCVIEWS:0000005 ! Workflow
+
+[Term]
+id: BIOCVIEWS:0000043
+name: AffymetrixChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000044
+name: AgilentChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000045
+name: ClonetechChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000046
+name: CodelinkChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000047
+name: GEChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000048
+name: INDACChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000049
+name: IlluminaChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000050
+name: QiagenChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000051
+name: RNG_MRCChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000052
+name: RocheChip
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000053
+name: UniversityHealthNetwork
+is_a: BIOCVIEWS:0000006 ! ChipManufacturer
+
+[Term]
+id: BIOCVIEWS:0000054
+name: HuO22
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000055
+name: JazaerimetaData
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000056
+name: Mu15v1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000057
+name: Mu22v3
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000058
+name: Norway981
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000059
+name: OperonHumanV3
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000060
+name: PartheenMetaData
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000061
+name: Roberts2005Annotation
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000062
+name: SHDZ
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000063
+name: adme16cod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000064
+name: ag
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000065
+name: ath1121501
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000066
+name: celegans
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000067
+name: drosgenome1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000068
+name: drosophila2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000069
+name: h10kcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000070
+name: h20kcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000071
+name: hcg110
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000072
+name: hcgi12k
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000073
+name: hcgi8k
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000074
+name: hgfocus
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000075
+name: hgu133a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000076
+name: hgu133a2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000077
+name: hgu133b
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000078
+name: hgu133plus2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000079
+name: hgu95a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000080
+name: hgu95av2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000081
+name: hgu95b
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000082
+name: hgu95c
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000083
+name: hgu95d
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000084
+name: hgu95e
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000085
+name: hguatlas13k
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000086
+name: hgug4100a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000087
+name: hgug4101a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000088
+name: hgug4110b
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000089
+name: hgug4111a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000090
+name: hgug4112a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000091
+name: hguqiagenv3
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000092
+name: hi16cod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000093
+name: hs25kresogen
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000094
+name: hu35ksuba
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000095
+name: hu35ksubb
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000096
+name: hu35ksubc
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000097
+name: hu35ksubd
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000098
+name: hu6800
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000099
+name: hwgcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000100
+name: illuminaHumanv1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000101
+name: illuminaHumanv2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000102
+name: illuminaMousev1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000103
+name: illuminaMousev1p1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000104
+name: illuminaRatv1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000105
+name: indac
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000106
+name: lumiHumanV1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000107
+name: lumiHumanV2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000108
+name: lumiMouseV1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000109
+name: lumiRatV1
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000110
+name: m10kcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000111
+name: m20kcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000112
+name: mgu74a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000113
+name: mgu74av2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000114
+name: mgu74b
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000115
+name: mgu74bv2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000116
+name: mgu74c
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000117
+name: mgu74cv2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000118
+name: mguatlas5k
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000119
+name: mgug4121a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000120
+name: mgug4122a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000121
+name: mi16cod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000122
+name: mm24kresogen
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000123
+name: moe430a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000124
+name: moe430b
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000125
+name: mouse4302
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000126
+name: mouse430a2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000127
+name: mpedbarray
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000128
+name: mu11ksuba
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000129
+name: mu11ksubb
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000130
+name: mu19ksuba
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000131
+name: mu19ksubb
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000132
+name: mu19ksubc
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000133
+name: mwgcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000134
+name: pedbarrayv10
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000135
+name: pedbarrayv9
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000136
+name: r10kcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000137
+name: rae230a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000138
+name: rae230b
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000139
+name: rat2302
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000140
+name: rgu34a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000141
+name: rgu34b
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000142
+name: rgu34c
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000143
+name: rgug4130a
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000144
+name: ri16cod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000145
+name: rnu34
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000146
+name: rtu34
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000147
+name: rwgcod
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000148
+name: u133x3p
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000149
+name: xenopuslaevis
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000150
+name: yeast2
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000151
+name: ygs98
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000152
+name: zebrafish
+is_a: BIOCVIEWS:0000007 ! ChipName
+
+[Term]
+id: BIOCVIEWS:0000153
+name: GACustomCDF
+is_a: BIOCVIEWS:0000009 ! CustomCDF
+
+[Term]
+id: BIOCVIEWS:0000154
+name: MBNICustomCDF
+is_a: BIOCVIEWS:0000009 ! CustomCDF
+
+[Term]
+id: BIOCVIEWS:0000155
+name: GeneCardsCustomSchema
+is_a: BIOCVIEWS:0000010 ! CustomDBSchema
+
+[Term]
+id: BIOCVIEWS:0000156
+name: Anopheles_gambiae
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000157
+name: Apis_mellifera
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000158
+name: Arabidopsis_lyrata
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000159
+name: Arabidopsis_thaliana
+def: "Thale cress plant." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000160
+name: Asparagus_officinalis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000161
+name: Bacillus_subtilis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000162
+name: Bos_taurus
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000163
+name: Caenorhabditis_elegans
+def: "Nematode worm." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000164
+name: Callithrix_jacchus
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000165
+name: Canis_familiaris
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000166
+name: Chlamydomonas_reinhardtii
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000167
+name: Cicer_arietinum
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000168
+name: Ciona_intestinalis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000169
+name: Danio_rerio
+def: "Zebrafish." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000170
+name: Drosophila_melanogaster
+def: "Fruit fly." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000171
+name: Drosophila_virilis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000172
+name: Eremothecium_gossypii
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000173
+name: Escherichia_coli
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000174
+name: Gallus_gallus
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000175
+name: Gasterosteus_aculeatus
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000176
+name: Glycine_max
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000177
+name: Homo_sapiens
+def: "Human species." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000178
+name: Hordeum_vulgare
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000179
+name: Kluyveromyces_lactis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000180
+name: Macaca_fascicularis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000181
+name: Macaca_mulatta
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000182
+name: Magnaporthe_grisea
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000183
+name: Medicago_truncatula
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000184
+name: Monodelphis_domestica
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000185
+name: Mus_musculus
+def: "House mouse." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000186
+name: Neurospora_crassa
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000187
+name: Oncorhynchus_mykiss
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000188
+name: Oryza_sativa
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000189
+name: Pan_paniscus
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000190
+name: Pan_troglodytes
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000191
+name: Plasmodium_falciparum
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000192
+name: Pseudomonas_aeruginosa
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000193
+name: Rattus_norvegicus
+def: "Norway rat." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000194
+name: Saccharomyces_cerevisiae
+def: "Budding yeast." []
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000195
+name: Saccharum_officinarum
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000196
+name: Salmo_salar
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000197
+name: Schizosaccharomyces_pombe
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000198
+name: Staphylococcus_aureus
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000199
+name: Sus_scrofa
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000200
+name: Taeniopygia_guttata
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000201
+name: Toxoplasma_gondii
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000202
+name: Triticum_aestivum
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000203
+name: Vitis_vinifera
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000204
+name: Xenopus_laevis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000205
+name: Xenopus_tropicalis
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000206
+name: Zea_mays
+is_a: BIOCVIEWS:0000012 ! Organism
+
+[Term]
+id: BIOCVIEWS:0000207
+name: AnnotationHub
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000208
+name: BSgenome
+def: "Full genome sequence packages for specific organisms." []
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000209
+name: ChipDb
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000210
+name: EuPathDB
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000211
+name: FRMA
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000212
+name: InparanoidDb
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000213
+name: MeSHDb
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000214
+name: OrgDb
+def: "Organism-level annotation databases linking gene identifiers to functional information." []
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000215
+name: OrganismDb
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000216
+name: PolyPhen
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000217
+name: SIFT
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000218
+name: SNPlocs
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000219
+name: TxDb
+def: "Transcript-level annotation databases containing gene models and transcript structures." []
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000220
+name: XtraSNPlocs
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000221
+name: cdf
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000222
+name: db0
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000223
+name: probe
+is_a: BIOCVIEWS:0000013 ! PackageType
+
+[Term]
+id: BIOCVIEWS:0000224
+name: GenomicSequence
+is_a: BIOCVIEWS:0000014 ! SequenceAnnotation
+
+[Term]
+id: BIOCVIEWS:0000225
+name: CopyNumberVariationData
+is_a: BIOCVIEWS:0000015 ! AssayDomainData
+
+[Term]
+id: BIOCVIEWS:0000226
+name: CpGIslandData
+is_a: BIOCVIEWS:0000015 ! AssayDomainData
+
+[Term]
+id: BIOCVIEWS:0000227
+name: ExpressionData
+is_a: BIOCVIEWS:0000015 ! AssayDomainData
+
+[Term]
+id: BIOCVIEWS:0000228
+name: SNPData
+is_a: BIOCVIEWS:0000015 ! AssayDomainData
+
+[Term]
+id: BIOCVIEWS:0000229
+name: COPDData
+is_a: BIOCVIEWS:0000016 ! DiseaseModel
+
+[Term]
+id: BIOCVIEWS:0000230
+name: CancerData
+is_a: BIOCVIEWS:0000016 ! DiseaseModel
+
+[Term]
+id: BIOCVIEWS:0000231
+name: HIVData
+is_a: BIOCVIEWS:0000016 ! DiseaseModel
+
+[Term]
+id: BIOCVIEWS:0000232
+name: Anopheles_gambiae_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000233
+name: Apis_mellifera_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000234
+name: Arabidopsis_lyrata_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000235
+name: Arabidopsis_thaliana_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000236
+name: Bacillus_subtilis_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000237
+name: Bos_taurus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000238
+name: Caenorhabditis_elegans_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000239
+name: Callithrix_jacchus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000240
+name: Canis_familiaris_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000241
+name: Ciona_intestinalis_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000242
+name: Danio_rerio_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000243
+name: Drosophila_melanogaster_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000244
+name: Drosophila_virilis_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000245
+name: Eremothecium_gossypii_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000246
+name: Escherichia_coli_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000247
+name: Gallus_gallus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000248
+name: Gasterosteus_aculeatus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000249
+name: Glycine_max_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000250
+name: Homo_sapiens_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000251
+name: Hordeum_vulgare_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000252
+name: Kluyveromyces_lactis_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000253
+name: Macaca_mulatta_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000254
+name: Magnaporthe_grisea_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000255
+name: Medicago_truncatul_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000256
+name: Monodelphis_domestica_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000257
+name: Mus_musculus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000258
+name: Neurospora_crassa_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000259
+name: Oncorhynchus_mykiss_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000260
+name: Oryza_sativa_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000261
+name: Pan_paniscus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000262
+name: Pan_troglodytes_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000263
+name: Plasmodium_falciparum_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000264
+name: Pseudomonas_aeruginosa_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000265
+name: Rattus_norvegicus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000266
+name: Saccharomyces_cerevisiae_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000267
+name: Saccharum_officinarum_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000268
+name: Schizosaccharomyces_pombe_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000269
+name: Staphylococcus_aureus_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000270
+name: Sus_scrofa_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000271
+name: Taeniopygia_guttata_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000272
+name: Triticum_aestivum_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000273
+name: Vitis_vinifera_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000274
+name: Xenopus_laevis_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000275
+name: Xenopus_tropicalis_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000276
+name: Zea_mays_Data
+is_a: BIOCVIEWS:0000017 ! OrganismData
+
+[Term]
+id: BIOCVIEWS:0000277
+name: ExperimentHub
+is_a: BIOCVIEWS:0000018 ! PackageTypeData
+
+[Term]
+id: BIOCVIEWS:0000278
+name: ImmunoOncologyData
+is_a: BIOCVIEWS:0000018 ! PackageTypeData
+
+[Term]
+id: BIOCVIEWS:0000279
+name: ArrayExpress
+is_a: BIOCVIEWS:0000019 ! RepositoryData
+
+[Term]
+id: BIOCVIEWS:0000280
+name: ENCODE
+is_a: BIOCVIEWS:0000019 ! RepositoryData
+
+[Term]
+id: BIOCVIEWS:0000281
+name: GEO
+is_a: BIOCVIEWS:0000019 ! RepositoryData
+
+[Term]
+id: BIOCVIEWS:0000282
+name: HapMap
+is_a: BIOCVIEWS:0000019 ! RepositoryData
+
+[Term]
+id: BIOCVIEWS:0000283
+name: NCI
+is_a: BIOCVIEWS:0000019 ! RepositoryData
+
+[Term]
+id: BIOCVIEWS:0000284
+name: PathwayInteractionDatabase
+is_a: BIOCVIEWS:0000019 ! RepositoryData
+
+[Term]
+id: BIOCVIEWS:0000285
+name: Project1000genomes
+is_a: BIOCVIEWS:0000019 ! RepositoryData
+
+[Term]
+id: BIOCVIEWS:0000286
+name: CellCulture
+is_a: BIOCVIEWS:0000021 ! SpecimenSource
+
+[Term]
+id: BIOCVIEWS:0000287
+name: Genome
+is_a: BIOCVIEWS:0000021 ! SpecimenSource
+
+[Term]
+id: BIOCVIEWS:0000288
+name: Germline
+is_a: BIOCVIEWS:0000021 ! SpecimenSource
+
+[Term]
+id: BIOCVIEWS:0000289
+name: Proteome
+is_a: BIOCVIEWS:0000021 ! SpecimenSource
+
+[Term]
+id: BIOCVIEWS:0000290
+name: Somatic
+is_a: BIOCVIEWS:0000021 ! SpecimenSource
+
+[Term]
+id: BIOCVIEWS:0000291
+name: StemCell
+is_a: BIOCVIEWS:0000021 ! SpecimenSource
+
+[Term]
+id: BIOCVIEWS:0000292
+name: Tissue
+is_a: BIOCVIEWS:0000021 ! SpecimenSource
+
+[Term]
+id: BIOCVIEWS:0000293
+name: CGHData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000294
+name: FlowCytometryData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000295
+name: HighThroughputImagingData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000296
+name: MassSpectrometryData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000297
+name: MicroarrayData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000298
+name: MicrotitrePlateAssayData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000299
+name: SAGEData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000300
+name: SequencingData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000301
+name: qPCRData
+is_a: BIOCVIEWS:0000022 ! TechnologyData
+
+[Term]
+id: BIOCVIEWS:0000302
+name: CellBasedAssays
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000303
+name: ChIPchip
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000304
+name: CopyNumberVariation
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000305
+name: CpGIsland
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000306
+name: DNAMethylation
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000307
+name: ExonArray
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000308
+name: GeneExpression
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000309
+name: GeneticVariability
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000310
+name: SNP
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000311
+name: Transcription
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000312
+name: aCGH
+is_a: BIOCVIEWS:0000023 ! AssayDomain
+
+[Term]
+id: BIOCVIEWS:0000313
+name: AlternativeSplicing
+def: "Analysis of differential exon usage and transcript isoform expression." []
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000314
+name: Coverage
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000315
+name: DNA3DStructure
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000316
+name: DemethylateRegionDetection
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000317
+name: DenovoAssembler
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000318
+name: DifferentialDNA3DStructure
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000319
+name: DifferentialExpression
+def: "Analysis to identify genes with statistically significant differences in expression levels between conditions." []
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000320
+name: DifferentialMethylation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000321
+name: DifferentialPeakCalling
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000322
+name: DifferentialSplicing
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000323
+name: DriverMutation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000324
+name: FunctionalPrediction
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000325
+name: GeneFusionDetection
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000326
+name: GenePrediction
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000327
+name: GeneRegulation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000328
+name: GeneSetEnrichment
+def: "Statistical methods to identify coordinated changes in predefined sets of genes." []
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000329
+name: GeneSignaling
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000330
+name: GeneTarget
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000331
+name: GenomeAnnotation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000332
+name: GenomeAssembly
+def: "Reconstruction of genome sequences from short sequencing reads." []
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000333
+name: GenomeWideAssociation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000334
+name: GenomicVariation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000335
+name: GermlineMutation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000336
+name: HistoneModification
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000337
+name: IndelDetection
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000338
+name: LinkageDisequilibrium
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000339
+name: MetagenomeAssembly
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000340
+name: MicrosatelliteDetection
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000341
+name: MotifAnnotation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000342
+name: MotifDiscovery
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000343
+name: NetworkEnrichment
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000344
+name: NetworkInference
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000345
+name: NucleosomePositioning
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000346
+name: PeakDetection
+def: "Identification of enriched genomic regions from sequencing data." []
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000347
+name: QuantitativeTrailLocus
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000348
+name: Scaffolding
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000349
+name: SequenceMatching
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000350
+name: SomaticMutation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000351
+name: SplicedAlignment
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000352
+name: StructuralVariation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000353
+name: TranscriptomeVariant
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000354
+name: VariantAnnotation
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000355
+name: VariantDetection
+def: "Identification of genetic variants including SNPs, indels, and structural variations." []
+is_a: BIOCVIEWS:0000024 ! BiologicalQuestion
+
+[Term]
+id: BIOCVIEWS:0000356
+name: DataImport
+is_a: BIOCVIEWS:0000025 ! Infrastructure
+
+[Term]
+id: BIOCVIEWS:0000357
+name: DataRepresentation
+is_a: BIOCVIEWS:0000025 ! Infrastructure
+
+[Term]
+id: BIOCVIEWS:0000358
+name: GPU
+is_a: BIOCVIEWS:0000025 ! Infrastructure
+
+[Term]
+id: BIOCVIEWS:0000359
+name: GUI
+is_a: BIOCVIEWS:0000025 ! Infrastructure
+
+[Term]
+id: BIOCVIEWS:0000360
+name: ThirdPartyClient
+is_a: BIOCVIEWS:0000025 ! Infrastructure
+
+[Term]
+id: BIOCVIEWS:0000361
+name: Agroinformatics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000362
+name: BiomedicalInformatics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000363
+name: Biophysics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000364
+name: CellBiology
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000365
+name: Cheminformatics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000366
+name: ComparativeGenomics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000367
+name: ComputationalChemistry
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000368
+name: Epigenetics
+def: "Study of heritable changes in gene expression without DNA sequence alterations." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000369
+name: Epitranscriptomics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000370
+name: FunctionalGenomics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000371
+name: Genetics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000372
+name: ImmunoOncology
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000373
+name: Immunogenetics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000374
+name: Immunology
+def: "Study of the immune system and immune responses." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000375
+name: Lipidomics
+def: "Large-scale study of lipid pathways and networks in biological systems." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000376
+name: MathematicalBiology
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000377
+name: Metabolomics
+def: "Comprehensive analysis of metabolites in biological systems." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000378
+name: Metagenomics
+def: "Study of genetic material recovered directly from environmental samples." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000379
+name: Pharmacogenetics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000380
+name: Pharmacogenomics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000381
+name: Phylogenetics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000382
+name: Proteomics
+def: "Large-scale study of proteins, their structures, and functions." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000383
+name: StructuralGenomics
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000384
+name: StructuralPrediction
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000385
+name: SystemsBiology
+def: "Computational and mathematical modeling of complex biological systems." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000386
+name: Transcriptomics
+def: "Study of the complete set of RNA transcripts in a cell or population." []
+is_a: BIOCVIEWS:0000026 ! ResearchField
+
+[Term]
+id: BIOCVIEWS:0000387
+name: Bayesian
+def: "Statistical methods based on Bayesian probability theory." []
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000388
+name: Classification
+def: "Assignment of samples or features to predefined categories." []
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000389
+name: Clustering
+def: "Grouping of similar data points or samples." []
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000390
+name: DecisionTree
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000391
+name: DimensionReduction
+def: "Techniques to reduce the number of variables while preserving information." []
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000392
+name: FeatureExtraction
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000393
+name: GraphAndNetwork
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000394
+name: HiddenMarkovModel
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000395
+name: MultidimensionalScaling
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000396
+name: NeuralNetwork
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000397
+name: PatternLogic
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000398
+name: PrincipalComponent
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000399
+name: Regression
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000400
+name: StructuralEquationModels
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000401
+name: SupportVectorMachine
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000402
+name: Survival
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000403
+name: TimeCourse
+is_a: BIOCVIEWS:0000028 ! StatisticalMethod
+
+[Term]
+id: BIOCVIEWS:0000404
+name: AnnotationHubSoftware
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000405
+name: CRISPR
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000406
+name: ExperimentHubSoftware
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000407
+name: FlowCytometry
+def: "Technology for measuring physical and chemical characteristics of cells or particles in a fluid stream." []
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000408
+name: MassSpectrometry
+def: "Analytical technique for identifying and quantifying molecules based on mass-to-charge ratio." []
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000409
+name: Microarray
+def: "Hybridization-based technologies for high-throughput measurement of gene expression or genomic features." []
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000410
+name: MicrotitrePlateAssay
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000411
+name: SAGE
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000412
+name: Sequencing
+def: "High-throughput DNA or RNA sequencing technologies." []
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000413
+name: SingleCell
+def: "Technologies and methods for analyzing individual cells rather than bulk populations." []
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000414
+name: Spatial
+def: "Technologies for spatially-resolved molecular profiling of tissues." []
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000415
+name: ddPCR
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000416
+name: qPCR
+is_a: BIOCVIEWS:0000029 ! Technology
+
+[Term]
+id: BIOCVIEWS:0000417
+name: Alignment
+def: "Mapping sequencing reads or sequences to a reference genome or transcriptome." []
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000418
+name: Annotation
+def: "Addition of biological context and functional information to genomic features." []
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000419
+name: BatchEffect
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000420
+name: ExperimentalDesign
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000421
+name: GenomeBrowsers
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000422
+name: MultipleComparison
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000423
+name: Normalization
+def: "Statistical procedures to remove systematic technical variation." []
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000424
+name: Pathways
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000425
+name: Preprocessing
+def: "Initial data processing steps including quality control and normalization." []
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000426
+name: QualityControl
+def: "Assessment and filtering of data quality." []
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000427
+name: ReportWriting
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000428
+name: Visualization
+def: "Graphical representation of data and analysis results." []
+is_a: BIOCVIEWS:0000031 ! WorkflowStep
+
+[Term]
+id: BIOCVIEWS:0000429
+name: BreastCancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+
+[Term]
+id: BIOCVIEWS:0000430
+name: ColonCancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+
+[Term]
+id: BIOCVIEWS:0000431
+name: KidneyCancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+
+[Term]
+id: BIOCVIEWS:0000432
+name: LeukemiaCancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+
+[Term]
+id: BIOCVIEWS:0000433
+name: LungCancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+
+[Term]
+id: BIOCVIEWS:0000434
+name: OvarianCancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+
+[Term]
+id: BIOCVIEWS:0000435
+name: ProstateCancerData
+is_a: BIOCVIEWS:0000230 ! CancerData
+
+[Term]
+id: BIOCVIEWS:0000436
+name: ImagingMassSpectrometryData
+is_a: BIOCVIEWS:0000296 ! MassSpectrometryData
+
+[Term]
+id: BIOCVIEWS:0000437
+name: ChipOnChipData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000438
+name: GenotypingArrayData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000439
+name: MethylationArrayData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000440
+name: MicroRNAArrayData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000441
+name: MultiChannelData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000442
+name: OneChannelData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000443
+name: ProprietaryPlatformsData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000444
+name: ReversePhaseProteinArrayData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000445
+name: TissueMicroarrayData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000446
+name: TwoChannelData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000447
+name: mRNAArrayData
+is_a: BIOCVIEWS:0000297 ! MicroarrayData
+
+[Term]
+id: BIOCVIEWS:0000448
+name: ChIPSeqData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000449
+name: DNASeqData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000450
+name: ExomeSeqData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000451
+name: MethylSeqData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000452
+name: MicrobiomeData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000453
+name: RIPSeqData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000454
+name: RNASeqData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000455
+name: SangerSeqData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000456
+name: SingleCellData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000457
+name: SmallRNAData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000458
+name: SpatialData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000459
+name: miRNAData
+is_a: BIOCVIEWS:0000300 ! SequencingData
+
+[Term]
+id: BIOCVIEWS:0000460
+name: ImagingMassSpectrometry
+is_a: BIOCVIEWS:0000408 ! MassSpectrometry
+
+[Term]
+id: BIOCVIEWS:0000461
+name: ChipOnChip
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000462
+name: GenotypingArray
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000463
+name: MethylationArray
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000464
+name: MicroRNAArray
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000465
+name: MultiChannel
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000466
+name: OneChannel
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000467
+name: ProprietaryPlatforms
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000468
+name: ReversePhaseProteinArray
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000469
+name: TissueMicroarray
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000470
+name: TwoChannel
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000471
+name: mRNAMicroarray
+is_a: BIOCVIEWS:0000409 ! Microarray
+
+[Term]
+id: BIOCVIEWS:0000472
+name: ATACSeq
+def: "Assay for Transposase-Accessible Chromatin using sequencing to identify open chromatin regions." []
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000473
+name: ChIPSeq
+def: "Chromatin immunoprecipitation followed by sequencing for genome-wide analysis of protein-DNA interactions." []
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000474
+name: DNASeq
+def: "Whole genome or targeted DNA sequencing for variant discovery and genomic analysis." []
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000475
+name: DNaseSeq
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000476
+name: DenovoGenome
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000477
+name: DenovoTranscriptome
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000478
+name: ExomeSeq
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000479
+name: HiC
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000480
+name: LongRead
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000481
+name: MNaseSeq
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000482
+name: MethylSeq
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000483
+name: MicrobialStrain
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000484
+name: Microbiome
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000485
+name: PooledScreens
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000486
+name: RIPSeq
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000487
+name: RNASeq
+def: "Sequencing technology for analyzing RNA transcripts to study gene expression and transcriptome dynamics." []
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000488
+name: RiboSeq
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000489
+name: SangerSeq
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000490
+name: SmallRNA
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000491
+name: TargetedResequencing
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000492
+name: WholeGenome
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000493
+name: miRNA
+is_a: BIOCVIEWS:0000412 ! Sequencing
+
+[Term]
+id: BIOCVIEWS:0000494
+name: MultipleSequenceAlignment
+is_a: BIOCVIEWS:0000417 ! Alignment
+
+[Term]
+id: BIOCVIEWS:0000495
+name: BioCarta
+is_a: BIOCVIEWS:0000424 ! Pathways
+
+[Term]
+id: BIOCVIEWS:0000496
+name: GO
+is_a: BIOCVIEWS:0000424 ! Pathways
+
+[Term]
+id: BIOCVIEWS:0000497
+name: KEGG
+is_a: BIOCVIEWS:0000424 ! Pathways
+
+[Term]
+id: BIOCVIEWS:0000498
+name: NCINatureCurated
+is_a: BIOCVIEWS:0000424 ! Pathways
+
+[Term]
+id: BIOCVIEWS:0000499
+name: Reactome
+is_a: BIOCVIEWS:0000424 ! Pathways
+
+[Term]
+id: BIOCVIEWS:0000500
+name: Network
+is_a: BIOCVIEWS:0000428 ! Visualization
+
